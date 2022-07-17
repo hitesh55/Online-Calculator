@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="calc.css">
+    <title>BASIC CALCULATOR</title>
+</head>
+<body> 
+    <h1>
+        ONLINE CALCULATOR
+
+    </h1>
+
+    
+
+</body>
+
+
+<form name="forml" class="calci" action="BASIC CALCULATOR.html" method="post">
+    <input type="text" name="answer" id="display">
+    <br>
+    </br>
+    <input type="button" class="btndesign" value="C" onclick="forml.answer.value=''">
+    <input type="button" class="btndesign" value="<"
+        onclick="forml.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)">
+    <input type="button" class="btndesign" value="00" onclick="forml.answer.value+='00'">
+    <input type="button" class="operatordesign" value="/" onclick="forml.answer.value+='/'">
+    <br>
+    </br>
+    <input type="button" class="btndesign" value="7" onclick="forml.answer.value+='7'">
+    <input type="button" class="btndesign" value="8" onclick="forml.answer.value+='8'">
+    <input type="button" class="btndesign" value="9" onclick="forml.answer.value+='9'">
+    <input type="button" class="operatordesign" value="*" onclick="forml.answer.value+='*'">
+    <br>
+    </br>
+    <input type="button" class="btndesign" value="4" onclick="forml.answer.value+='4'">
+    <input type="button" class="btndesign" value="5" onclick="forml.answer.value+='5'">
+    <input type="button" class="btndesign" value="6" onclick="forml.answer.value+='6'">
+    <input type="button" class="operatordesign" value="-" onclick="forml.answer.value+='-'">
+    <br>
+    </br>
+    <input type="button" class="btndesign" value="1" onclick="forml.answer.value+='1'">
+    <input type="button" class="btndesign" value="2" onclick="forml.answer.value+='2'">
+    <input type="button" class="btndesign" value="3" onclick="forml.answer.value+='3'">
+    <input type="button" class="operatordesign" value="+" onclick="forml.answer.value+='+'">
+    <br>
+    </br>
+    <input type="button" id="zero" value="0" onclick="forml.answer.value+='0'">
+    <input type="button" class="btndesign" value="." onclick="forml.answer.value+='.'">
+    <input type="button" class="operatordesign" value="=" onclick="forml.answer.value = eval(forml.answer.value)">
+
+</form>
+
+</html>
